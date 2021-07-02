@@ -1,0 +1,25 @@
+
+{
+    "manifest_version": 2,
+
+    "name": "SSR-Remover-ScoreSaber",
+    "description": "Score Saber Ranker Remover",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": ["https://scoresaber.com/global*"],
+            "js": ["script.js"]
+        }
+    ],
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ]
+}
