@@ -10,7 +10,7 @@
         {
             "run_at": "document_end",
             "matches": ["https://scoresaber.com/global*"],
-            "js": ["script.js"]
+            "js": ["content.js"]
         }
     ],
 
@@ -20,6 +20,8 @@
     },
     "permissions": [
         "activeTab",
-        "tabs"
+        "tabs",
+        "storage",
+        "https://scoresaber.com/global*"
     ]
 }
